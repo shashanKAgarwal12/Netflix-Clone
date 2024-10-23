@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url("assets/images/bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  height: 644px;
+  position: relative;
+}
+
+.main .box {
+  height: 644px;
+  width: 100%;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75vw;
+  margin: auto;
+  height: 100px;
+}
+
+nav img {
+  width: 130px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.membership {
+  font-family: "Martel Sans", sans-serif;
+  height: calc(100% - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 0 30px;
+}
+
+.membership > :nth-child(1) {
+  font-size: 48px;
+  font-weight: 900;
+  width: 580px;
+  text-align: center;
+}
+
+.membership > :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.membership > :nth-child(3) {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.line {
+  height: 7px;
+  background-color: rgb(46, 44, 44);
+  position: relative;
+  z-index: 20;
+}
+
+.btn {
+  padding: 10px 25px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(248, 243, 243, 0.021);
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.lang-icon i {
+  margin-right: 5px;
+}
+
+.btn-red {
+  background-color: rgb(229, 9, 20);
+  color: white;
+  padding: 15px 20px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: 400;
+  border: none;
+}
+
+.icon i {
+  margin-left: 22px;
+}
+
+.btn-red-sm {
+  background-color: rgb(229, 9, 20);
+  color: white;
+  border: none;
+}
+
+.membership-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.main input {
+  padding: 17px 200px 17px 8px;
+  color: white;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.secImg {
+  position: relative;
+}
+
+.secImg img {
+  width: 555px;
+  position: relative;
+  z-index: 10;
+}
+
+.secImg video {
+  position: absolute;
+  top: 51px;
+  right: 0;
+  width: 555px;
+}
+
+section.first > div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+
+section.first > div :first-child {
+  font-family: "Poppins", sans-serif;
+  font-size: 37px;
+  font-weight: 900;
+}
+
+section.first > div :nth-child(2) {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.faq {
+  background-color: black;
+  color: white;
+  padding: 34px;
+}
+
+.faq h2 {
+  text-align: center;
+}
+
+.faqbox {
+  transition: all 1s ease-out;
+  font-size: 24px;
+  display: flex;
+  background-color: rgb(36 36 36);
+  color: white;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 34px auto;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faqbox:hover {
+  background-color: rgb(75, 72, 72);
+}
+
+.faqbox svg {
+  color: white;
+}
+
+.membership2 > :nth-child(1) {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.membership-btn2 input {
+  padding: 17px 388px 17px 15px;
+  color: white;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+footer {
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 60vw;
+  margin: auto;
+  padding: 14px;
+}
+
+.questions {
+  padding: 40px 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 1300px) {
+  nav {
+    max-width: 90vw;
+  }
+  .first {
+    flex-wrap: wrap;
+  }
+  .secImg img {
+    width: 305px;
+  }
+  .secImg video {
+    width: 305px;
+  }
+  .membership > :nth-child(1) {
+    font-size: 2rem;
+    max-width: 50vh;
+  }
+  .membership > :nth-child(2) {
+    font-size: 18px;
+  }
+  .membership > :nth-child(3) {
+    font-size: 18px;
+  }
+
+  .membership-btn2 input {
+    padding: 17px 250px 17px 15px;
+  }
+  .membership-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .membership2 > :nth-child(1) {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.list {
+  list-style: none;
+}
+
+.list li {
+  padding: 10px 0;
+}
+
+footer {
+  max-width: 90vw;
+}
